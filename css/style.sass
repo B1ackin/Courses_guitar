@@ -1,0 +1,41 @@
+*
+  margin: 0
+  padding: 0
+
+$color-blue: #5290EA
+
+
+.container
+  max-width: 1140px
+  margin: 0 auto
+
+.main-section
+  height: 800px
+  background: #f0f0f0
+  padding-top: 16px
+  &__header
+    img
+      height: 80px
+  &__nav-container
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    height: 69px
+    align-items: center
+
+.nav-menu
+  &__list
+    display: flex
+    flex-direction: row
+    &-item
+      list-style: none
+      margin-right: 64px
+      font-size: 18px
+      &:last-child
+        margin-right: 0px
+
+.left-wrapper
+  &__rectagle-blue
+    width: 565px
+    height: 220px
+    background: $color-blue

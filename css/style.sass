@@ -22,6 +22,8 @@ $color-orange: #f28b64
     justify-content: space-between
     height: 69px
     align-items: center
+  &__content-container
+    display: flex
 
 .nav-menu
   &__list
@@ -73,3 +75,18 @@ $color-orange: #f28b64
     box-shadow: 0px 4px 4px rgba(0,0,0,0.25)
     transform: rotate(-36.15deg)
     z-index: 1
+.icons
+  display: flex
+  &__item
+    width: 40px
+    height: 40px
+    border: 1px solid $color-blue
+    border-radius: 100px
+    justify-content: center
+    align-items: center
+    display: flex
+    margin-right: 17px
+    &:last-child
+      margin-right: 0px
+    i
+      font-size: 21px

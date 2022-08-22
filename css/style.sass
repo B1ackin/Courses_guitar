@@ -10,9 +10,11 @@ $color-orange: #f28b64
   margin: 0 auto
 
 .main-section
+  position: relative
   height: 800px
   background: #f0f0f0
   padding-top: 16px
+  overflow: hidden
   &__header
     img
       height: 80px
@@ -25,6 +27,17 @@ $color-orange: #f28b64
   &__content-container
     display: flex
     position: relative
+  &__first-elipse
+    position: absolute
+    top: 129px
+    right: 34px
+  &__second-elipse
+    position: absolute
+    right: -120px
+    top: 650px
+
+
+
 
 .nav-menu
   &__list
@@ -82,6 +95,7 @@ $color-orange: #f28b64
   position: absolute
   top: 150px
   right: 76px
+  z-index: 1
   &__icons-box
     padding-left: 10px
   &__title
@@ -139,3 +153,24 @@ $color-orange: #f28b64
       height: 40px
     &__text
       font-size: 16px
+
+.elipse
+  width: 194px
+  height: 194px
+  background: linear-gradient(143.92deg, rgba(237, 123, 80, 0.5) 14.85%, rgba(72, 138, 234, 0.5) 53.25%, rgba(44,44,44,0.5) 85.74%)
+  border-radius: 150px
+  display: flex
+  justify-content: center
+  align-items: center
+  z-index: 0
+  &_big
+    width: 282px
+    height: 282px
+  &__subtract
+    height: 129.33px
+    width: 129.33px
+    background: #f0f0f0
+    border-radius: 150px
+    &_big
+      width: 188px
+      height: 188px

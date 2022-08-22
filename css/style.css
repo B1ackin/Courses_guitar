@@ -9,9 +9,11 @@
 }
 
 .main-section {
+  position: relative;
   height: 800px;
   background: #f0f0f0;
   padding-top: 16px;
+  overflow: hidden;
 }
 .main-section__header img {
   height: 80px;
@@ -26,6 +28,16 @@
 .main-section__content-container {
   display: flex;
   position: relative;
+}
+.main-section__first-elipse {
+  position: absolute;
+  top: 129px;
+  right: 34px;
+}
+.main-section__second-elipse {
+  position: absolute;
+  right: -120px;
+  top: 650px;
 }
 
 .nav-menu__list {
@@ -91,6 +103,7 @@
   position: absolute;
   top: 150px;
   right: 76px;
+  z-index: 1;
 }
 .right-wrapper__icons-box {
   padding-left: 10px;
@@ -161,6 +174,31 @@
 }
 .buttons__icon-btn__text {
   font-size: 16px;
+}
+
+.elipse {
+  width: 194px;
+  height: 194px;
+  background: linear-gradient(143.92deg, rgba(237, 123, 80, 0.5) 14.85%, rgba(72, 138, 234, 0.5) 53.25%, rgba(44, 44, 44, 0.5) 85.74%);
+  border-radius: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 0;
+}
+.elipse_big {
+  width: 282px;
+  height: 282px;
+}
+.elipse__subtract {
+  height: 129.33px;
+  width: 129.33px;
+  background: #f0f0f0;
+  border-radius: 150px;
+}
+.elipse__subtract_big {
+  width: 188px;
+  height: 188px;
 }
 
 /*# sourceMappingURL=style.css.map */

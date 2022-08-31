@@ -10,7 +10,7 @@
 
 .main-section {
   position: relative;
-  height: 800px;
+  min-height: 800px;
   background: #f0f0f0;
   padding-top: 16px;
   overflow: hidden;
@@ -32,7 +32,7 @@
 .main-section__first-elipse {
   position: absolute;
   top: 129px;
-  right: 34px;
+  right: 80px;
 }
 .main-section__second-elipse {
   position: absolute;
@@ -199,6 +199,10 @@
 .elipse__subtract_big {
   width: 188px;
   height: 188px;
+}
+
+.second-section {
+  min-height: 700px;
 }
 
 /*# sourceMappingURL=style.css.map */
